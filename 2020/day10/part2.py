@@ -1,5 +1,3 @@
-import math
-
 data = []
 with open("input.txt", "r") as inputdata:
   data.insert(0,0)
