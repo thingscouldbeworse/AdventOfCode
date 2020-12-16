@@ -3,7 +3,8 @@ with open("input.txt", 'r') as inputfile:
   for line in inputfile:
     numbers.append(int(line[:-1]))
 
-for i in range(len(numbers)-1, 2019):
+for i in range(len(numbers)-1, 30000000 - 1):
+  print(i)
   if numbers[i] not in numbers[:-1]:
     numbers.append(0)
   else:
@@ -11,4 +12,4 @@ for i in range(len(numbers)-1, 2019):
     numbers.append((indices[-1] + 1) - (indices[-2] + 1))
     
 
-print(numbers)
+print(numbers[-1])
